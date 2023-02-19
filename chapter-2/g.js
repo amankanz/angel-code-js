@@ -5,11 +5,16 @@
  * using new-line character to separate lines.
  */
 
-for (let line = 0; line < 9; line += 1) {
-  for (let lineboard = "#"; ; lineboard += "#") {
-    if (lineboard.length == 8) {
-      console.log(lineboard);
-      break;
+let size = 8;
+let board = "";
+for (let y = 0; y < size; y++) {
+  for (let x = 0; x < size; x++) {
+    if ((x + y) % 2 == 0) {
+      board += " ";
+    } else {
+      board += "#";
     }
   }
+  board += "\n";
 }
+console.log(board);

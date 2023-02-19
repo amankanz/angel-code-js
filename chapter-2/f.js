@@ -8,17 +8,12 @@
  *  print 'Buzz' instead.
  *
  * Modify the program to print 'FizzBuzz' for numbers that are both
- * divisible by 3 and 5 (and still printing 'Fizz' or 'Buzz' for number
+ * divisible by 3 and 5 (and still printing 'Fizz' or 'Buzz'
  * for number that are only divisible by one of those)
  */
-let number = 1;
-while (number <= 100) {
-  if (number % 3 === 0) {
-    console.log("Fizz");
-  } else if (number % 5 === 0) {
-    console.log("Buzz");
-  } else {
-    console.log("FizzBuzz");
-  }
-  number += 1;
+for (let num = 1; num <= 100; num += 1) {
+  let output = "";
+  if (num % 3 == 0) output += "Fizz";
+  if (num % 5 == 0) output += "Buzz";
+  console.log(output || num);
 }
