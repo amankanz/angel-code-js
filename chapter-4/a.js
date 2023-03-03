@@ -2,7 +2,8 @@
 
 /*
 Array is a Data type specifically for storing sequences of values.
-an array is written as a list of values between square brackes.
+an array is written as a list of values between square brackes,
+separated by commas.
 */
 
 let listOfNumbers = [2, 3, 5, 7, 11];
@@ -37,6 +38,20 @@ null.length;
  * and with a square brackets
  * Both value.x and value[x] access the property on value
  * but not necessarly the same property.
+ *
+ * when using the dot nation, the word after the dot is the literal
+ * name of the property.
+ * when using square brackets, the expression between the square
+ * brackets is evaluated to get the prperty name.
+ * Whereas value.x fetches the property of the value named "x",
+ * value[x] tries to evaluate the expression x and uses the result,
+ * converted to a string as the property name.
+ *
+ * so if yu know the property you're interested is is called "color"
+ * you say value.color.
+ *
+ * If you want to extract the property named by the value held in the
+ * binding i, you say value[i]
  */
 
 /*
@@ -72,7 +87,7 @@ console.log(sequence[0]);
  * and return it.
  * These are tradition terms for operations on
  * stack.
- * A stack in programming, is a data structure that allaws you to push
+ * A stack in programming, is a data structure that allows you to push
  * values into it and pop them out again in the opposite order
  * so that the thing that was added last is removed first.
  */

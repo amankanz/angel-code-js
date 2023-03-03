@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScriipt Fundamental of web development with chatGPT</title>
+</head>
+<body>
+  <!--Document Object MOdel (DOM) is a programing interface for web documents.
+      The DOM provides a set of rules and protocols that Developers can use
+      to interact with HTML documents using JavScript.
+
+      This makes it possible to create dynamic, interactive web pages that can respond
+      to user input and change over time.
+
+      The DOM represents the document as nodes and objects, therefore progremming 
+      languages can interact with the page.
+  -->
+
+  <!--KEY CONCEPTS AND TERMINALOGY-->
+
+  <!--1. NODE
+      A Node is an object that represent an element, attribute, or text
+      block in an HTML document.
+      The Node has properties and methods that can be accessed and manipulated
+      using Javacript.
+
+      E.g: Create a text node and append it to an existing element.
+        using JavaScript:
+  -->
+  <div id="my-element"></div>
+
+  <script>
+    const myElement = document.getElementById("my-element");
+    const myTextNode = document.createTextNode("Hello, world!");
+    myElement.appendChild(myTextNode);
+  </script>
+</body>
+</html>

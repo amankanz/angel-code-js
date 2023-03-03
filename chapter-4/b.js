@@ -10,7 +10,7 @@
 /**
  * Inside the braces, there is a list of properties
  * separated by commas.
- * Each prperty has a name followed by a colon and a value.
+ * Each property has a name followed by a colon and a value.
  */
 /*
 let day1 = {
